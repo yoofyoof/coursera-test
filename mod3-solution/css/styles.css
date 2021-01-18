@@ -1,0 +1,346 @@
+body {
+  font-size: 20px;
+  color: #fff;
+  background-color: black;
+  font-family: 'Long Cang', cursive;
+}
+
+
+/**header **/
+#header-nav{
+	background-color: #fff;
+	border-radius: 0;
+	border: 0;
+}
+
+#logo-img{
+	background: url('../image/restaurant.png') no-repeat;
+	width: 150px;
+	height: 150px;
+	margin: 10px 15px 10px 0;
+}
+
+.navbar-brand{
+	padding-top: 25px;
+}
+
+.navbar-brand h1{/*restaurant name*/
+	font-family: 'Long Cang', cursive;
+	color: #E9967A;
+	font-size: 1.5em;
+	margin-top: 5px;
+	line-height: .75;
+	text-align: center;
+}
+
+.navbar-brand a: hover, .navbar-brand a: focus{
+	text-decoration: none;
+}
+
+.navbar-brand p{ /*certify*/
+	color:#A9A9A9 ;
+	font-size: .7em;
+}
+
+.navbar-brand p span{/* pic certified*/
+	vertical-align: middle;
+}
+
+#nav-list{
+	margin-top: 10px;
+}
+
+#nav-list a{
+	color: #A9A9A9;
+	text-align: center;
+}
+
+#nav-list a:hover{
+	background: #DCDCDC;
+}
+
+#nav-list span{
+	color: #E9967A;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px pink;
+}
+
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* End Header */
+
+
+
+
+
+
+
+
+/* Footer */
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	border-top: 0;
+}
+
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+
+#hours, #address{
+	line-height: 2;
+}
+
+#hours > span, #address > span{
+	font-size: 1.3em;
+}
+
+#address p{
+	color:#FFA500;
+	font-size: .8em;
+	line-height: 1.8;
+}
+
+#testimonials{
+	font-style: italic;
+}
+#testimonials p:nth-child(2) {
+	margin-top: 35px;
+}
+
+#testimonials p:nth-child(3) {
+	margin-top: 35px;
+}
+/* End Footer */
+
+
+
+
+
+
+
+/* Home Page */
+.container .jumbotron{
+	box-shadow: 0 0 50px black;
+	border-bottom: 2px solid black;
+}
+
+#quote{
+	height: 200px;
+	width: 100%;
+	margin-top: 100px;
+	position: relative;
+	border: 1px solid #A9A9A9;
+}
+
+#quote span{
+	position: absolute;
+	text-align: center;
+	font-family: 'Long Cang', cursive;
+	font-size: 1.6em;
+	color: white;
+	top: 30%;
+	left: 0;
+	width: 100%;
+	
+}
+
+#menu-tile, #recipes-tile, #location-tile{
+	height: 250px;
+	width: 100%;
+	margin-bottom: 15px;
+	position: relative;
+	border: 2px solid #A9A9A9;
+	overflow: hidden;
+}
+
+#menu-tile, #recipes-tile, #location-tile: hover{
+	box-shadow: 0 1px 5px 1px #cccccc;
+	background-position: center;
+	}
+
+#menu-tile{
+	background: url('../image/menu-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#recipes-tile{
+	background: url('../image/recipes-tile.jpg') no-repeat;
+	background-position: center;
+}
+
+#menu-tile span, #recipes-tile span, #location-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.6em;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.7;
+}
+/*End Home Page */
+
+
+
+
+/*Menu Categories Page*/
+.category-tile{
+	position: relative;
+	border: 2px solid white;
+	overflow: hidden;
+	width: 300px;
+	height: 300px;
+	margin: 0 auto 70px;
+}
+
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	background-color: #000;
+	color: #fff;
+	opacity: 0.7;
+}
+
+.category-tile:hover {
+	box-shadow: 0 1px 5px 1px #cccccc;
+}
+
+#Menu-categories-title{
+	margin-bottom: 50px;
+}
+
+
+/****** Large device only****/
+@media (min-width: 1200px){
+.jumbotron{
+	background: url('../image/jumbotron_1200.png') no-repeat;
+	height: 675px;
+	}
+}
+
+/****** Medium device only *****/
+@media(min-width: 992px) and (max-width: 1199px){
+/* header */
+#logo-img{
+	background: url('../image/restaurant_medium.png') no-repeat;
+	width: 100px;
+	height: 100px;
+	margin: 5px 5px 5px 0;
+}
+/* End Header */
+
+/*Home Page background pic */
+.jumbotron{
+	background: url('../image/jumbotron_992.png') no-repeat;
+	height: 558px;
+	}
+}
+
+/****** Small device only *****/
+@media(min-width: 768px) and (max-width: 991px){
+	.jumbotron{
+		background: url('../image/jumbotron_768.png') no-repeat;
+		height: 432px;
+	}
+
+}
+
+/***** Extra Small device only *****/
+@media(max-width: 767px){
+.navbar-brand{
+		padding-top: 10px;
+		height: 80px;
+}
+
+.navbar-brand h1{/*restaurant name*/
+	padding-top: 10px;
+	font-size: 5vw; /* vw: viewport; 1vw= 1% of viewport width, responsive font */
+	text-align: center;
+}
+
+.navbar-brand p{ /*Hu nong certify*/
+	color:#A9A9A9 ;
+	font-size: .7em;
+	margin-top: 12px;
+}
+
+.navbar-brand p img{/* certify logo */
+	height: 20px;
+}
+
+#collapsable-nav a{ /*collapsed nav menu glyph */
+	font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+	font-size: 1em;
+	margin-right: 5px;
+}
+/* End header */
+
+/* footer */
+.panel-footer section{
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.panel-footer section:nth-child(3){
+	margin-bottom: 0;
+}
+
+.panel-footer section hr{
+	width: 50%;
+}
+
+/*home page background pic */
+.container .jumbotron{
+	margin-top: 30px;
+	padding: 0;
+
+	}
+
+#menu-tile, #recipes-tile{
+	width: 360px;
+	margin: 0 auto 15px;
+	}
+}
+
+/******Super extra small device only *******/
+@media(max-width: 567px){
+/*header */
+.navbar-brand h1{/*restaurant name*/
+font-size: 7vw;
+padding-top: 5px;
+line-height: .75;
+text-align: center;
+}
+/*End header */
+
+/*Home Page */
+.container .jumbotron{
+	width: 320px;
+	margin: 0 auto 15px;
+}
+
+
+#menu-tile, #recipes-tile{
+	width: 320px;
+	margin: 0 auto 15px;
+}
+}
+
+
+
+
